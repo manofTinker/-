@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lishuai.highconcurrentsecondkill.mapper.ShopMapper">
+
+    <resultMap id="BaseResultMap" type="com.lishuai.highconcurrentsecondkill.pojo.Shop">
+        <id column = "id" property="id"/>
+        <result column = "name" property="name"/>
+        <result column = "number" property="number"/>
+        <result column = "start_time" property="starttime"/>
+        <result column = "end_time" property="endtime"/>
+        <result column = "version" property="version"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,number,start_time,end_time,version
+    </sql>
+
+</mapper>
